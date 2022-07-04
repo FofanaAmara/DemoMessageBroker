@@ -2,5 +2,5 @@
 
 cd C:\Users\Ordi\source\repos\Demo.MessageBroker
 
-start "Producteur" Demo.PointAPoint.Producteur\bin\debug\Demo.PointAPoint.Producteur.exe 10
+start "Producteur" Demo.PointAPoint.Producteur\bin\debug\Demo.PointAPoint.Producteur.exe 100000
 

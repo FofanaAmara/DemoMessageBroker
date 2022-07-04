@@ -10,9 +10,11 @@ namespace Demo.PointAPoint.Consommateur
     {
         static void Main(string[] args)
         {
+            var quantiteARecevoir = int.Parse(Console.ReadLine());
+
             var consomateur = new Consomateur();
 
-            consomateur.RecevoirAsync();
+            consomateur.RecevoirAsync(quantiteARecevoir);
 
             Console.ReadLine();
         }

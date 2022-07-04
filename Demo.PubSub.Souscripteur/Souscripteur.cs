@@ -9,8 +9,8 @@ namespace Demo.PubSub.Souscripteur
 {
     public class Souscripteur
     {
-        private string _chaineConnexion = "chaineConnexionAzure";
-        private string _nomTopic = "nomTopic";
+        private string _chaineConnexion = "Endpoint=sb://demobrokercgi.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=VX6Lnu6RbhaHw30lN5HgQdsJolC083ShA1jn/CkUtYI=";
+        private string _nomTopic = "topic1";
         private string _nomSouscription = "";
 
         public static ServiceBusProcessor processor;
@@ -36,8 +36,6 @@ namespace Demo.PubSub.Souscripteur
             await processor.StartProcessingAsync();
 
             Console.WriteLine("En attente de message sur le topic {0} - souscription {1} ...", _nomTopic, _nomSouscription);
- 
-           
 
         }
 

@@ -9,8 +9,8 @@ namespace Demo.PubSub.Publicateur
 {
     public class Publicateur
     {
-        private string _chaineConnexion = "chaineConnexionAzure";
-        private string _nomTopic = "nomTopic";
+        private string _chaineConnexion = "Endpoint=sb://demobrokercgi.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=VX6Lnu6RbhaHw30lN5HgQdsJolC083ShA1jn/CkUtYI=";
+        private string _nomTopic = "topic1";
 
 
         public List<ServiceBusMessage> GenererMessages(int nombreMessages)
